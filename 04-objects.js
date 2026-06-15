@@ -30,3 +30,21 @@ student.certifications = {
 console.log("\nSkills and Certifications:");
 console.log(student.skills);
 console.log(student.certifications);
+
+
+const wcwmProject = {
+    name: "WCWM Digital Hub",
+    type: "Website Redesign",
+    role: "Web Director",
+    techStack: {
+        frontend: "HTML, CSS, JavaScript",
+        cms: "WordPress",
+        design: "Figma"
+    },
+    goals: {
+        improveListening: true,
+        improveSchedule: true,
+        improveShowDiscovery: true,
+        improveDJProfiles: true
+    }
+};
