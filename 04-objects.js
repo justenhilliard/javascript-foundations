@@ -48,3 +48,43 @@ const wcwmProject = {
         improveDJProfiles: true
     }
 };
+
+console.log("\nWCWM Project:");
+console.log(wcwmProject.name);
+console.log(wcwmProject.techStack.frontend);
+console.log(wcwmProject.goals.improveSchedule);
+
+const application = {
+    company: "Capital One",
+    program: "Technology Internship Program",
+    status: "Preparing",
+    priority: "High",
+    displayApplication: function () {
+        return `${this.company} - ${this.program}: ${this.status}`;
+    }
+};
+
+console.log("\nApplication:");
+console.log(application.displayApplication());
+
+
+application.updateStatus = function (newStatus) {
+    this.status = newStatus;
+};
+
+application.updateStatus("Practicing CodeSignal");
+
+console.log("\nUpdated Application:");
+console.log(application.displayApplication());
+
+
+const paycheck = {
+    hoursWorked: 24,
+    hourlyRate: 13,
+    calculateGrossPay: function () {
+        return this.hoursWorked * this.hourlyRate;
+    }
+};
+
+console.log("\nPaycheck:");
+console.log(`Gross pay: $${paycheck.calculateGrossPay()}`);
