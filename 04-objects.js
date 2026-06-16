@@ -88,3 +88,20 @@ const paycheck = {
 
 console.log("\nPaycheck:");
 console.log(`Gross pay: $${paycheck.calculateGrossPay()}`);
+
+
+const projectStatus = {
+    javascript: "learning",
+    wcwm: "planning",
+    leetcode: "starting",
+    resume: "updating soon"
+};
+
+console.log("\nProject Status Keys:");
+console.log(Object.keys(projectStatus));
+
+console.log("\nProject Status Values:");
+console.log(Object.values(projectStatus));
+
+console.log("\nProject Status Entries:");
+console.log(Object.entries(projectStatus));
