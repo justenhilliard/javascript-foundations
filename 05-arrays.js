@@ -53,3 +53,23 @@ console.log(sortedFruits);
 const numbers = [10, 20, 30, 40];
 const total = numbers.reduce((sum, num) => sum + num, 0);
 console.log(`Total: ${total}`);
+
+// Arrays of objects (combining what we learned in 04-objects.js)
+const users = [
+    { name: "Justen", age: 25 },
+    { name: "Sam", age: 30 },
+    { name: "Alex", age: 22 },
+  ];
+  
+  // Looping through an array of objects
+  users.forEach((user) => {
+    console.log(`${user.name} is ${user.age} years old`);
+  });
+  
+  // Mapping to get just one property from each object
+  const names = users.map((user) => user.name);
+  console.log(names);
+  
+  // Filtering objects based on a condition
+  const adultsOver24 = users.filter((user) => user.age > 24);
+  console.log(adultsOver24);
