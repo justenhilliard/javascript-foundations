@@ -12,3 +12,14 @@ console.log(fruits);
 fruits.pop(); // removes last item
 fruits.shift(); // removes first item
 console.log(fruits);
+
+
+// Looping through an array
+for (let i = 0; i < fruits.length; i++) 
+{
+    console.log(`Fruit ${i + 1}: ${fruits[i]}`);
+}
+  
+  fruits.forEach((fruit, index) => {
+    console.log(`${index}: ${fruit}`);
+  });
