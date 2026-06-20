@@ -23,3 +23,12 @@ for (let i = 0; i < fruits.length; i++)
   fruits.forEach((fruit, index) => {
     console.log(`${index}: ${fruit}`);
   });
+
+
+  // map - create a new array based on the original
+const upperFruits = fruits.map((fruit) => fruit.toUpperCase());
+console.log(upperFruits);
+
+// filter - create a new array with items that pass a test
+const longNames = fruits.filter((fruit) => fruit.length > 5);
+console.log(longNames);
