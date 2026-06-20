@@ -43,3 +43,13 @@ console.log(fruits.includes("mango")); // true or false
 
 // indexOf - find the position of an item
 console.log(fruits.indexOf("mango"));
+
+
+// sort - sort array elements (alphabetically by default for strings)
+const sortedFruits = [...fruits].sort();
+console.log(sortedFruits);
+
+// reduce - boil array down to a single value
+const numbers = [10, 20, 30, 40];
+const total = numbers.reduce((sum, num) => sum + num, 0);
+console.log(`Total: ${total}`);
