@@ -32,3 +32,14 @@ console.log(upperFruits);
 // filter - create a new array with items that pass a test
 const longNames = fruits.filter((fruit) => fruit.length > 5);
 console.log(longNames);
+
+
+// find - get the first item that matches a condition
+const foundFruit = fruits.find((fruit) => fruit.startsWith("b"));
+console.log(foundFruit);
+
+// includes - check if an array contains a value
+console.log(fruits.includes("mango")); // true or false
+
+// indexOf - find the position of an item
+console.log(fruits.indexOf("mango"));
