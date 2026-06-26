@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Manipulation Practice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 500px;
+      margin: 60px auto;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title"></h1>
+
+  <button id="scan-btn">Scan item</button>
+
+  <p id="result"></p>
+
+  <div id="loader" class="hidden">Loading...</div>
+
+  <h3>History</h3>
+  <ul id="history-list"></ul>
+
+  <script src="06-dom-manipulation.js"></script>
+</body>
+</html>
